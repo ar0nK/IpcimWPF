@@ -14,11 +14,38 @@ namespace IpcimWPF
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
+    /// 
+
+    public class Ip
+    {
+        public string DomainName {  get; set; }
+        public string IpAddress { get; set; }
+
+        public Ip(string domainName, string ipAddress)
+        {
+            DomainName = domainName;
+            IpAddress = ipAddress;
+        }
+    }
+    
+    
     public partial class MainWindow : Window
     {
+        public List<Ip> ips = new List<Ip>();
         public MainWindow()
         {
             InitializeComponent();
+
+        }
+
+        private void Bevitel(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Mentes(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
