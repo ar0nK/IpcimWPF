@@ -68,6 +68,12 @@ namespace IpcimWPF
 
         private void Mentes(object sender, RoutedEventArgs e)
         {
+            string menteni = "";
+            foreach (var h in ips)
+            {
+                menteni += h.DomainName + ";" + h.IpAddress + "\n";
+            }
+            File.WriteAllText("csudh.txt", menteni);
 
         }
     }
